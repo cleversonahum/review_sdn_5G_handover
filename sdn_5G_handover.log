@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.18)  25 JAN 2017 00:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.18)  25 JAN 2017 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,68 +488,67 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-[3] <fig1.jpg, id=19, 254.3904pt x 232.2276pt>
-File: fig1.jpg Graphic file (type jpg)
- <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg used on input line 157.
-(pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 158.
-
+<figure1.png, id=13, 1011.78pt x 633.36626pt>
+File: figure1.png Graphic file (type png)
+ <use figure1.png>
+Package pdftex.def Info: figure1.png used on input line 74.
+(pdftex.def)             Requested size: 298.75264pt x 187.01538pt.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 158.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 75.
+ [2 <./figure1.png>]
+<figure2.png, id=20, 1011.78pt x 799.98875pt>
+File: figure2.png Graphic file (type png)
+ <use figure2.png>
+Package pdftex.def Info: figure2.png used on input line 83.
+(pdftex.def)             Requested size: 298.75264pt x 236.21436pt.
 
-<fig2.jpg, id=20, 205.7286pt x 234.1548pt>
+<figure3.png, id=21, 1011.78pt x 785.93625pt>
+File: figure3.png Graphic file (type png)
+ <use figure3.png>
+Package pdftex.def Info: figure3.png used on input line 92.
+(pdftex.def)             Requested size: 298.75264pt x 232.06505pt.
+ [3 <./figure2.png>] [4 <./figure3.png>] <fig1.jpg, id=30, 254.3904pt x 232.227
+6pt>
+File: fig1.jpg Graphic file (type jpg)
+
+<use fig1.jpg>
+Package pdftex.def Info: fig1.jpg used on input line 170.
+(pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
+ <fig2.jpg, id=31, 205.7286pt x 234.1548pt>
 File: fig2.jpg Graphic file (type jpg)
  <use fig2.jpg>
-Package pdftex.def Info: fig2.jpg used on input line 164.
+Package pdftex.def Info: fig2.jpg used on input line 177.
 (pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
- [4 <./fig1.jpg> <./fig2.jpg>]
 
-LaTeX Warning: Citation `knuth:84' on page 5 undefined on input line 208.
-
-
-LaTeX Warning: Citation `boulic:91' on page 5 undefined on input line 209.
-
-
-LaTeX Warning: Citation `smith:99' on page 5 undefined on input line 209.
-
+[5 <./fig1.jpg>]
 No file sdn_5G_handover.bbl.
-[5] (./sdn_5G_handover.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[6 <./fig2.jpg>] (./sdn_5G_handover.aux) ) 
 Here is how much of TeX's memory you used:
- 3281 strings out of 493304
- 44651 string characters out of 6139871
- 117403 words of memory out of 5000000
- 6668 multiletter control sequences out of 15000+600000
+ 3297 strings out of 493304
+ 44934 string characters out of 6139871
+ 117427 words of memory out of 5000000
+ 6680 multiletter control sequences out of 15000+600000
  21033 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,10n,28p,1112b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
-tic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sdn_5G_handover.pdf (5 pages, 169281 bytes).
+ 38i,10n,28p,1124b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/
+enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sdn_5G_handover.pdf (6 pages, 337214 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

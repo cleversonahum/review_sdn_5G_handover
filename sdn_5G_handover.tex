@@ -58,36 +58,49 @@ points of space before each paragraph. Page numbers must be suppressed.
 Full papers must respect the page limits defined by the conference.
 Conferences that publish just abstracts ask for \textbf{one}-page texts.
 
-\section{Background} \label{sec:sdn}
+\section{Background SDN and NFV} \label{sec:sdn}
 \subsection{SDN}
 
 The SDN (Software-Defined Networking) is a recently concept of network, nowadays the most part of the networks has a distributed control in the their elements. So, with the growth of the multimedia and the increases of flows of data traffic in the world, it emerged necessity to have more control over the network and more mobility in the chooses, the networks need to be more flexible. With this need the SDN was thought to solve some problems in the actual architecture.
 
-The main of SDN is split the data plane (data flow) of control plane (control flow) and centralized all the control of the network in a unique place named Controller. In the SDN, it has a division between APPs, control plane and data plane, it is possible to seen in the picture N. The APPs are applications with functions related to security, network management and others, they are responsible to make security and other needs of the network, in the traditional architecture this responsible is distributed in the elements of network, how SDN has more informations about the network, it became more easy to make decisions about the flow paths, to solve congestions and other problems faced in networks.
+The main of SDN is split the data plane (data flow) of control plane (control flow) and centralized all the control of the network in a unique place named Controller. In the SDN, it has a division between APPs, control plane and data plane, it is possible to seen in (Figure 1). The APPs are applications with functions related to security, network management and others, they are responsible to make security and other needs of the network, in the traditional architecture this responsible is distributed in the elements of network, how SDN has more informations about the network, it became more easy to make decisions about the flow paths, to solve congestions and other problems faced in networks.
 
 The control plane is represented by the Controllers, it is responsible to control the switches OpenFlow in according with algorithms and configurations established in APPs. The communication between Controllers and APPs is done through northbound interface. With the Controllers is possible to set all the connections of the switch through software. The OpenFlow switch quoted is a special switch made for to work with SDN networks.
 
 The data plane is represented by the switches, OpenFlow switches is the principal, The communication between Controllers and switches is done through southbound interface. The OpenFlow switches is more simple than traditional switches and its communication and iteration is made through a API. In the traditional switches we have a proprietor systems for each one, it became more complex to implement a network because the systems is much specifically. With the switches OpenFlow the work of switches is more simple and it can be more flexible, because now all the connections can be defined in the software, moreover, it has more freedom to make changes in its, because of the iteration level is higher than traditional switches.
 
-Picture N
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.7\textwidth]{figure1.png}
+\caption{Components of SDN}
+\label{figure1}
+\end{figure}
 
-In the actual architecture, it has the data plane and control plane distributed on the routers, servers, clients ans other elements of the network, with this all the control of network became more complex and hard to manage. The SDN proposed a different way of see the network, it allow to centralize the control of network in a place, with is, it is possible to see all the nodes and connections of the network and to know about everything that occurs, thereby it is possible to do the better actions for to improve the network performance. The figure N2 shows a illustrations of the difference between the networks in a traditional architecture, in a hybrid and using SDN. In a traditional networking, there is the data plane and control plane in all the components of the network, it is distributed. In hybrid networking there is a controller over the traditional networking for to control the switches and elements of the network. In the SDN, there is a clear division between data plane and control plane, the switches has only the data planes and the controller has the control plane.
+In the actual architecture, it has the data plane and control plane distributed on the routers, servers, clients ans other elements of the network, with this all the control of network became more complex and hard to manage. The SDN proposed a different way of see the network, it allow to centralize the control of network in a place, with is, it is possible to see all the nodes and connections of the network and to know about everything that occurs, thereby it is possible to do the better actions for to improve the network performance. The picture in (Figure 2) shows a illustrations of the difference between the networks in a traditional architecture, in a hybrid and using SDN. In a traditional networking, there is the data plane and control plane in all the components of the network, it is distributed. In hybrid networking there is a controller over the traditional networking for to control the switches and elements of the network. In the SDN, there is a clear division between data plane and control plane, the switches has only the data planes and the controller has the control plane.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.7\textwidth]{figure2.png}
+\caption{High level illustration of networking paradigms}
+\label{figure 2: High level illustration of networking paradigms}
+\end{figure}
+
+The OpenFlow is a communication protocol to provide access to switches. Sometimes the OpenFlow concept is confused with SDN, but the concepts are different, the OpenFlow work like a API to make communication between the control plane and data plane. In the picture in (Figure 3), it is a demonstration of the functions of OpenFlow. the OpenFlow controller works in user program to control the switches. In the OpenFlow switch there is a OpenFlow interface for to receive the commands of OpenFlow controller and after the changes are done in the forwarding tables and forwarding path.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.7\textwidth]{figure3.png}
+\caption{OpenFlow}
+\label{figure 3: OpenFlow}
+\end{figure}
 
 
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
+\subsection{NFV}
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
+The NV (Network Virtualization) is a newly concept about networks using cloud computing and its resources. With the cloud computing, it became possible to set and use resources distributed in the network in according with the needs of the user. So, the resource is distributed and the control about this is remote and can be more precise and with higher performance than traditional architecture.
+
+With the same idea of NV, emerged the concept o NFV (Network Function Virtualization), this concept is about to emulate into computational resources the elements of the network, like routers, firewalls and EPCs. This is very important to make networks more flexible, scalable and simple to manage.
+
 
 \section{5G and Mobility}
 
@@ -203,14 +216,9 @@ images with excessive resolution, as they may take hours to print, without any
 visible difference in the result. 
 
 \section{References}
+      Hamid F, HyunYong L and Akihiro N, ’Software-Defined Networking: A survey’, Computer Networks, 2015.
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
-
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+      Garzon J, Adamuz-Hinojosa O, Ameigeiras P, ’Handover Implementation in a 5G SDN-based Mobile Network Architecture’, PIMRC: Mobile and Wireless Networks, 2016
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
