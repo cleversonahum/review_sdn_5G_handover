@@ -122,10 +122,18 @@ The subsection titles must be in boldface, 12pt, flush left.
 
 \section{System Architecture}
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
+The architecture proposed in the work is a 5g mobile network for the AC(Acess Cloud) whith partial virtualization and SDN-based UP, this scenario is made by implementing the LTE CP as NFVs and running it in a logically centralized data center.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.7\textwidth]{figurejamelly.png}
+\caption{System Architecture}
+\label{figure 4: System Architecture}
+\end{figure}
+
+In the work, the virtualized LTE control network design is based in a 1:N mapping architecture, so they are split in 3 components : front-end(FE), service logic(SL) and state database(SD). The FE is implemented with an OF(Open flow)	switch and its functions are serve as a communication interface with other network entities and balance the load of SLs. The SL is stateless and its function is implement the of control messages, finally the SDB is responsible for store the user session state(allowing the statless of SL) and that is the reason why the SL number can grow without affect the in-session users.
+
+In the AC there is SDN controller that acts as an interface between LTE CP and UP. As na example, the vS-GW interact with the Controller through NorthBound API and the UP switches are controlled by the switch through the Southbound API.
 
 \section{Handover Procedure}
 

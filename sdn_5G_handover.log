@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  27 JAN 2017 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  27 JAN 2017 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,43 +610,48 @@ File: figure3.png Graphic file (type png)
  <use figure3.png>
 Package pdftex.def Info: figure3.png used on input line 92.
 (pdftex.def)             Requested size: 298.75264pt x 232.06505pt.
- [3 <./figure2.png>] [4 <./figure3.png>] <fig1.jpg, id=30, 254.3904pt x 232.227
-6pt>
-File: fig1.jpg Graphic file (type jpg)
+ [3 <./figure2.png>] <figurejamelly.png, id=26, 506.89375pt x 343.2825pt>
+File: figurejamelly.png Graphic file (type png)
 
-<use fig1.jpg>
-Package pdftex.def Info: fig1.jpg used on input line 168.
+<use figurejamelly.png>
+Package pdftex.def Info: figurejamelly.png used on input line 129.
+(pdftex.def)             Requested size: 298.75264pt x 202.32538pt.
+ [4 <./figure3.png>] [5 <./figurejamelly.png>]
+<fig1.jpg, id=34, 254.3904pt x 232.2276pt>
+File: fig1.jpg Graphic file (type jpg)
+ <use fig1.jpg>
+Package pdftex.def Info: fig1.jpg used on input line 177.
 (pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
- <fig2.jpg, id=31, 205.7286pt x 234.1548pt>
+
+<fig2.jpg, id=35, 205.7286pt x 234.1548pt>
 File: fig2.jpg Graphic file (type jpg)
  <use fig2.jpg>
-Package pdftex.def Info: fig2.jpg used on input line 175.
+Package pdftex.def Info: fig2.jpg used on input line 184.
 (pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
-
-[5 <./fig1.jpg>]
+ [6 <./fig1.jpg> <./fig2.jpg>]
 No file sdn_5G_handover.bbl.
-[6 <./fig2.jpg>] (./sdn_5G_handover.aux) ) 
+[7] (./sdn_5G_handover.aux) ) 
 Here is how much of TeX's memory you used:
- 3414 strings out of 494888
- 45806 string characters out of 6179126
- 116017 words of memory out of 5000000
- 6640 multiletter control sequences out of 15000+600000
+ 3420 strings out of 494888
+ 45941 string characters out of 6179126
+ 116025 words of memory out of 5000000
+ 6645 multiletter control sequences out of 15000+600000
  21033 words of font info for 44 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  38i,10n,28p,1124b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sdn_5G_handover.pdf (6 pages, 336545 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sdn_5G_handover.pdf (7 pages, 397900 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
