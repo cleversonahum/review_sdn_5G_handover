@@ -104,11 +104,15 @@ With the same idea of NV, emerged the concept o NFV (Network Function Virtualiza
 
 \section{5G and Mobility}
 
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
+The level of mobility is one of the key issues at the service level. In the 5G system, not all user equipments - UE requires continuous mobility and / or global reach. The level of mobility can be reduced to save network resources and reduce the complexity of the control. Some authors specifies a mobility level control (LoM) requirement in the connected UE state. The 5G system should enable operators to update the level of mobility support provided to a UE, for example, during the establishment of packet data connection.
+
+Thee mobility level can be set in two modes: idle mode and connected mode. The mobility of the sleep mode can be defined for accessibility to the UE in idle mode. Mobility level in connected mode is set to handover level (HO), in this article we focuses on connected mode. To make more plain, handover is a process in telecommunications and mobile communications in which a cellular call or a data session is transferred from one base station to another without disconnecting the session. Cellular services are based on mobility and handover, allowing the user to be moved from one base station range to another or to be switched to the nearest base site for better performance.
+
+In the LTE or 4G mobile system, the network always supports packet lossless mobility. This control overhead is not effective when the number of devices increases tremendously by 5G. In today's network services, most of the application, such as web browsing or chat, does not require seamless mobility. In addition, the application layer has its own mechanism for maintaining the level of application of service continuity. For these services, the network can handle mobility at a lower level than the current 4G system.
+
+The level of mobility control is actively discussed in the 3GPP 5G architecture study. The mobility level (MdA) can be defined in two respects. The LoM of the Area (LoM-A) specifies the area where the UE can have mobility services - RAN, TA, EPC, LTE-5G and non-3GPP. LoM of Continuity (LoM-C) specifies the level of session continuity - uninterrupted mobility or interrupted mobility. To support the on-demand mobility requirement, the network must have an architecture to update (upgrade or downgrade) the LoM. To support the LoM update of the active session, the UE requests to change the LoM and the operator updates the LoM of the UE, if necessary. Updating the EU LoM-C and LoM-A requires monitoring the status of your application and its location. For example, the smart phone has the Internet messenger that supports the exchange of text messages and voice / video calls. When the user exchanges text messages, the UE does not need to support continuous mobility. But as soon as the UE invokes the voice / video call, continuous mobility is required. Depending on the state of your application, EU must request the LoM update for the network. Similar scenario for updating LoM-A can also be found.
+
+Therefore, 5G network system must support multiple levels of mobility. For the connected mode mobility level, the HO level must be defined in two respects - continuity level and area level - and both aspects must be dynamically controllable - that is, the mobility level can be updated or degraded dynamically. The network architecture must be designed to satisfy the flexibility of control.
 
 \section{Related Works}
 
