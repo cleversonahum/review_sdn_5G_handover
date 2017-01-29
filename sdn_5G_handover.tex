@@ -47,15 +47,12 @@
 
 
 \section{Introduction}
+With the rapid expansion of the mobile environment there is a need to improve Internet connectivity so that the user has a better experience. The 5G technology comes with the proposal to offer greater bandwidth for mobile devices, the main motivations for the emergence of 5G are: According to estimates, seventy per cent of the world's population will use mobile devices, Emergence of new enterprises in which they demanded a higher quality of service, as, information of all things, deep learning of the machine, support things, digital assistants keeping conversation with clients, augmented reality, 3D printing, intra body networks. The requirements for implementing 5G networks are the flexibility and scalability of the network, and a less costly processing and memory demand beyond greater energy efficiency than its predecessor. In order to improve 5G, it is necessary to use new network architectures such as Software Defined Networking (SDN) and Network Functions Virtualization (NFV).
 
-All full papers and posters (short papers) submitted to some SBC conference,
-including any supporting documents, should be written in English or in
-Portuguese. The format paper should be A4 with single column, 3.5 cm for upper
-margin, 2.5 cm for bottom margin and 3.0 cm for lateral margins, without
-headers or footers. The main font must be Times, 12 point nominal size, with 6
-points of space before each paragraph. Page numbers must be suppressed.
+The most successful initiative in this regard was undoubtedly the interface and the Openflow protocol. With Openflow, the routing elements provide a simple programming interface, which allows them to extend access and control of the query table used by the hardware to determine the next step of each received packet. In this way, the routing continues to be efficient, since the query to the routing table remains a task of the hardware, but the decision on how each package should be processed can be transferred to a level superior, where different features can be added. This structure allows the network to be extensively controlled through, expressed in software. This new paradigm was called Software Defined Networks (SDN). NFV is the support for defining services such as VPN, WAN, intrusion detection, firewall and so on. It is about virtualizing functions that were previously performed by physical devices. Now they can be defined by software, and can be adapted to various types of network equipment and standard servers in the market, thus becoming revenue generating services.
 
-Full papers must respect the page limits defined by the conference.
+Both the network and the virtualization of its functions are related. NFV is complementary to SDN, but does not depend on it, or contrariwise. NFV can be implemented without SDN. NFV can be implemented without an SDN; however, the two concepts and solutions are combined for more efficiency and mutually beneficial. But, in reality, SDN makes the NFV more attractive because a software-defined network contributes to the automation of its infrastructure, which allows policy-based decisions to orchestrate network traffic. And respectively, the virtualization of network functions acts directly on the services ensures their capacity, aligned with the virtualized elements.
+
 Conferences that publish just abstracts ask for \textbf{one}-page texts.
 
 \section{Background SDN and NFV} \label{sec:sdn}
@@ -144,10 +141,13 @@ subsequent paragraphs should be indented by 1.27 cm.
 
 \section{SDN-Based Mobility Support}
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
+The PMIPFlow architecture, which provides a solution for mobility management in software defined networks. The proposal was inspired by NetLMM protocols (Network-Based Localized Mobility Management) and PMIPv6 (Proxy Mobile IPv6), Which free the mobile device from mobility-related functions and delegate to the network the task of changing the handover of the device due to its movement or due to the search for better channels.
+The PMIPFlow is divided into two main parts: OMAG (OpenFlow Mobility Access Gateway) and PMIPFLow-LMA (PMIPFlow - Localized Mobility Anchor) the latter is an application running on the OpenFlow controller (LMA-NOX). In this architecture, each cell, served by an OMAG, forms the so-called PMIPFlow domain. OMAG is a mobility agent, which resides at the edge of the OpenFlow network, monitoring the user's path in its coverage area, if any user leaves your domain, it should trigger the PMIPFlow-LMA informing the event of this event. OMAG can also start the handover procedure for a user who is about to leave the network coverage area.
+LMA-NOX is a special controller in which the PMIPFlow-LMA application is executed. PMIPFLow-LMA has functions such as: creating rules on OpenFlow switches to meet the mobility needs of OMAG customers, receive and process PBU (Proxy Binding Update) messages, send PBA (Proxy Binding Ack) messages to the mobile node and serve as an access server, preventing unauthorized users.
+PMIPFlow-LMA was developed from the concept of AML in PMIPv6, but with modifications to transform it into a controller component, Instead of creating IP tunnels, Such as the LMA in the PMIP, the PMIPFLow-LMA receives the PBU, creates rules in the routing table of the OpenFlow switch and sends the PBA back to the OMAGS.
+In addition to OMAG and PMIPFlow-LMA, it is possible to verify that there are PMIPFlow gateways in the architecture. These gateways serve as the OpenFlow exit point of the PMIPFlow domain. The proposal can be extended both in terms of adding new users and in terms of network core expansion, because if the network core grows, With the inclusion of OpenFlow elements, the operation of the OMAGs and the PMIPFlow-LMA, Not be affected by being at the edge of the network.
+PMIPFlow can run concurrently with other controller applications without interfering with network operation, because, it is possible to create specialized slices for mobile clients and separate slices of mobile clients from the slices of fixed clients. The OpenFlow switch forms the core of the PMIPFlow SDN network, in it, routing rules are installed, network slices are created, traffic prioritization. Finally, all SDN operations. It is the element that PMIPFlow-LMA will control during PMIPFlow operations.
+
 
 \section{Results and discussions}
 
